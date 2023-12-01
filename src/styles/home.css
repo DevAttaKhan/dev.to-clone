@@ -1,0 +1,5 @@
+.HOME {
+  display: grid;
+  grid-template-columns: 240px 650px 325px;
+  grid-column-gap: 16px;
+}

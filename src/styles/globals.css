@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./home.css");
+@import url("./create-post.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f5f5f5;
+}
+
+.button-unstyled {
+  @apply bg-none border-none;
+}
+
+.form-controll {
+  @apply mb-2;
+}
+
+.form-controll label {
+  @apply text-base font-medium mb-2 block text-[#171717];
+}
+
+.form-controll input[type="text"] {
+  @apply block w-full rounded border  p-2;
+}
+.form-controll input[type="file"]::file-selector-button {
+  @apply text-base font-medium border-none px-4 py-2 rounded bg-[#D6D6D7] hover:bg-[#aeaeaf] cursor-pointer;
+}
+
+.BLOG_TITLE {
+  resize: none;
+}
+
+.BLOG_TITLE::placeholder {
+  color: #525252;
+  width: 100%;
+}
+.BLOG_TITLE::-webkit-scrollbar {
+  display: none;
+}
